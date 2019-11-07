@@ -4,6 +4,9 @@ window.$docsify = {
     repo: 'https://github.com/epochwz/docsify-plus',
     // 主页
     homepage: 'README.md',
+    // 封面
+    coverpage: 'cover.md',
+    onlyCover: true,
 };
 
 const footerHtml = [
