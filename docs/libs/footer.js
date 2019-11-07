@@ -10,6 +10,10 @@ window.$docsify = {
     // 导航栏
     loadNavbar: 'navbar.md',
     mergeNavbar: true,
+    // 侧边栏
+    loadSidebar: 'sidebar.md',
+    subMaxLevel: 4,
+    autoHeader: true,
 };
 
 const footerHtml = [
