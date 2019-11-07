@@ -7,6 +7,9 @@ window.$docsify = {
     // 封面
     coverpage: 'cover.md',
     onlyCover: true,
+    // 导航栏
+    loadNavbar: 'navbar.md',
+    mergeNavbar: true,
 };
 
 const footerHtml = [
