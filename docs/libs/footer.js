@@ -37,6 +37,13 @@ const footerHtml = [
     '<script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>',
     '<!-- 代码复制 -->',
     '<script src="//unpkg.com/docsify-copy-code@2"></script>',
+    '<!-- 代码高亮 -->',
+    '<script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>',
+    '<script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>',
+    '<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>',
+    '<script src="//unpkg.com/prismjs/components/prism-javascript.min.js"></script>',
+    '<script src="//unpkg.com/prismjs/components/prism-sql.min.js"></script>',
+    '<script src="//unpkg.com/prismjs/components/prism-css.min.js"></script>',
 ].join('');
 
 document.write(footerHtml);
