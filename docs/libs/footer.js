@@ -31,6 +31,8 @@ const footerHtml = [
     '<script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>',
     '<!-- 图片缩放 -->',
     '<script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>',
+    '<!-- 分页导航 -->',
+    '<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>',
 ].join('');
 
 document.write(footerHtml);
