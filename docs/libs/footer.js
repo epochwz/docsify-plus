@@ -35,6 +35,8 @@ const footerHtml = [
     '<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>',
     '<!-- 回到顶部 -->',
     '<script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>',
+    '<!-- 代码复制 -->',
+    '<script src="//unpkg.com/docsify-copy-code@2"></script>',
 ].join('');
 
 document.write(footerHtml);
