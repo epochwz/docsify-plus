@@ -14,6 +14,12 @@ window.$docsify = {
     loadSidebar: 'sidebar.md',
     subMaxLevel: 4,
     autoHeader: true,
+    // 启用相对路径
+    relativePath: true,
+    // 路由别名
+    alias: {
+        '/docs/(.*)': '/$1'
+    },
     // 全文搜索
     search: {
         maxAge: 86400000, // 过期时间，单位毫秒，默认一天
