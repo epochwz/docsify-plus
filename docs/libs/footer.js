@@ -46,6 +46,9 @@ window.$docsify = {
                 // 引用内容强调：支持在 Markdown 中使用 "> ! " 进行引用内容的强调；原始语法 "!> "
                 content = content.replace(/([\r\n])> ! /g, "$1!> ");
 
+                // 在文章标题下面追加水平分割线
+                content = content.replace(/\s*(^# .*[\r\n]+)/g, "$1\r\n---\r\n");
+
                 return content;
             });
         }
