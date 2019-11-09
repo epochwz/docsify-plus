@@ -28,6 +28,20 @@ window.$docsify = {
         placeholder: 'search',
         noData: 'Not Found!'
     },
+    // 自定义插件
+    plugins: [
+        function (hook, vm) {
+            let url = window.$docsify.basePath ? window.$docsify.basePath : window.location.href.split("#")[0];
+            hook.beforeEach(function (content) {
+                // 站内图片链接自动转换：支持在 Markdown 中使用项目根路径作为图片引用的相对链接
+                // markdown:   /docs/images/xxx.png
+                // html:       http://host:port/path/images/xxx.png
+                content = content.replace(/([:(]\s*)\/docs\/(images)/g, "$1" + url + "$2");
+
+                return content;
+            });
+        }
+    ]
 };
 
 const footerHtml = [
