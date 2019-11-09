@@ -42,6 +42,10 @@ window.$docsify = {
                 // html:       http://host:port/path/images/xxx.png
                 content = content.replace(/([:(]\s*)\/docs\/(images)/g, "$1" + url + "$2");
 
+                // 兼容(自动转换) docsify 语法
+                // 引用内容强调：支持在 Markdown 中使用 "> ! " 进行引用内容的强调；原始语法 "!> "
+                content = content.replace(/([\r\n])> ! /g, "$1!> ");
+
                 return content;
             });
         }
